@@ -55,4 +55,12 @@ Tu API debe incluir las siguientes funcionalidades:
 
 ### **Bonus Tracks (Desafíos Adicionales)**
 
-Estos puntos no son obligatorios
+Estos puntos no son obligatorios para completar el desafío, pero nos ayudarán a entender tu potencial y la forma en que resuelves problemas complejos. Si te animas a implementar alguno, ¡documenta tu decisión en el `README`!
+
+1.  **Mensajería Asíncrona (Kafka)**: Implementa un mecanismo para registrar el historial de auditoría de forma asíncrona. En lugar de escribir directamente en la base de datos dentro del flujo de la API, envía un mensaje a un *topic* de Kafka y haz que un servicio independiente consuma y persista esos eventos. Esto demuestra tu conocimiento de sistemas distribuidos y del **Patrón Outbox**.
+
+2.  **Tests de Cobertura**: Agrega **pruebas unitarias y de integración** para los componentes críticos de tu API. Esto nos muestra tu compromiso con la calidad del código y la fiabilidad del software.
+
+3.  **Métricas y Monitoreo**: Expón métricas de la API, como la latencia de los endpoints y el volumen de requests, para que puedan ser monitoreadas con herramientas como **Prometheus y Grafana**. Esto refleja tu familiaridad con la observabilidad de los sistemas.
+
+4.  **Seguridad**: Piensa en cómo harías más segura la comunicación entre servicios si esta arquitectura escalara. Por ejemplo, podrías implementar la validación del token de acceso con una librería más robusta o considerar un sistema de autorización más complejo.
